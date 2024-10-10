@@ -9,8 +9,8 @@ describe('Person name: Jim, gender: Male', () => {
     expect(person.name).toBe(name);
   });
 
-  test(`Test gender: ${gender}`, () => {
-    expect(person.gender).toBe(gender);
+  test(`Test Designation: ${gender}`, () => {
+    expect(person.designation).toBe(gender);
   });
 
   test(`introduction`, () => {
@@ -27,8 +27,8 @@ describe('Person name: Jill, gender: Female', () => {
     expect(person.name).toBe(name);
   });
 
-  test(`Test gender: ${gender}`, () => {
-    expect(person.gender).toBe(gender);
+  test(`Test Designation: ${gender}`, () => {
+    expect(person.designation).toBe(gender);
   });
 
   test(`introduction`, () => {
