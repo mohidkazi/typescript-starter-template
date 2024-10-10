@@ -14,7 +14,7 @@ describe('Person name: Jim, gender: Male', () => {
   });
 
   test(`introduction`, () => {
-    expect(person.introduce()).toBe(`Hi, I am ${name}. I am ${designation}.`);
+    expect(person.introduce()).toBe(`Hi, I am ${name}. I am a ${designation}.`);
   });
 });
 
@@ -32,6 +32,6 @@ describe('Person name: Jill, gender: Female', () => {
   });
 
   test(`introduction`, () => {
-    expect(person.introduce()).toBe(`Hi, I am ${name}. I am ${designation}.`);
+    expect(person.introduce()).toBe(`Hi, I am ${name}. I am a ${designation}.`);
   });
 });
