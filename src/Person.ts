@@ -1,41 +1,41 @@
-export class Base {
-  private input: string;
-  private N: number;
+type OutputType = string | number | Array<string> | Array<number>;
 
-  private output: string | number;
+export class Base {
+  protected input: string;
+  protected N: number;
+
+  protected output: OutputType;
 
   constructor() {}
 
-  public set _input(input: string) {
+  public _input(input: string): Base {
     this.input = input;
     this.N = input.length - 1;
+    return this;
   }
 
-  public get _output(): string | number {
+  public get _output(): OutputType {
     return this.output;
   }
 
   public process() {
-    for (let index = 0; index <= this.N; index++) {
-      console.log(this.input[index]);
-    }
+    return this;
   }
 
   public log() {
-    console.log(this.output);
+    console.log(`Input::${this.input} & Output::${this.output}`);
   }
 }
 
 const base: Base = new Base();
-base._input = '';
-base.process();
-base.log();
+base._input('').process().log();
 
-export class Person {
+export class Person extends Base {
   public name;
   public designation;
 
   constructor(name, designation) {
+    super();
     this.name = name;
     this.designation = designation;
   }
