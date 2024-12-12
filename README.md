@@ -2,6 +2,7 @@
 
 Nodejs starter template with typescript, eslint, prettier, husky
 
-TODO
-[] Add Docker Compose for Nodejs
-[] Add Docker Compose for BunJs
+
+## TODO
+- [ ] Add Docker Compose for Nodejs
+- [ ] Add Docker Compose for BunJs
